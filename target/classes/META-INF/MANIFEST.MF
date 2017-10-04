@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1507118884133
+Build-Jdk: 1.8.0_131
+Built-By: dewni
+Bundle-Description: WSO2 is an open source application development softw
+ are company focused on providing service-oriented        architecture s
+ olutions for professional developers.
+Bundle-DocURL: http://www.wso2.org/
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: osgiconsumer
+Bundle-SymbolicName: osgiconsumer
+Bundle-Vendor: WSO2
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.example.osgiconsumer.package01.internal;version="1.0
+ .0.SNAPSHOT";uses:="com.example.osgiproducer.package01,org.osgi.framewo
+ rk"
+Import-Package: org.osgi.framework;version="[1.7,2)",com.example.osgipro
+ ducer.package01;version="1.0.0.SNAPSHOT",org.osgi.service.component;ver
+ sion="[1.2,2)"
+Require-Capability: osgi.service;filter:="(objectClass=com.example.osgip
+ roducer.package01.Producer)";effective:=active,osgi.ee;filter:="(&(osgi
+ .ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/com.example.osgiconsumer.package01.ConsumerC
+ omponent.xml
+Tool: Bnd-3.3.0.201609221906
